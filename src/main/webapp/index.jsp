@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World Refined</title>
     <style>
-        /* This centers everything on the screen */
+        /* Layout: full-height column with centered main content and footer */
         body {
             margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Adding some "eye candy" to the text */
@@ -32,6 +38,14 @@
     </style>
 </head>
 <body>
-    <h2>Hello World!</h2>
+    <div class="content">
+        <h2>Hello World!</h2>
+    </div>
+
+    <footer>
+        <div style="width:100%;max-width:1000px;margin:0 auto;padding:12px 20px;text-align:center;opacity:0.95;">
+            <small>&copy; 2026 My Webapp — Built with care. | <a href="#" style="color:rgba(255,255,255,0.85);text-decoration:underline;">Privacy</a> | <a href="#" style="color:rgba(255,255,255,0.85);text-decoration:underline;">Terms</a></small>
+        </div>
+    </footer>
 </body>
 </html>
